@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "ebe4f59e-1b41-481a-870e-ce64047dad4a",
+		"name": "api-calls",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "backend",
+			"item": [
+				{
+					"name": "shipments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "shipments_country",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "shipments_decimal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "shipments_empty",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "pricing",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "pricing_integer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "pricing_decimal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "e2e",
+			"item": [
+				{
+					"name": "good_all_lists",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/aggregation?pricing=BR,CN&track=109347263,123456891&shipments=109347263,123459999",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"aggregation"
+							],
+							"query": [
+								{
+									"key": "pricing",
+									"value": "BR,CN"
+								},
+								{
+									"key": "track",
+									"value": "109347263,123456891"
+								},
+								{
+									"key": "shipments",
+									"value": "109347263,123459999"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "good_track",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/aggregation?pricing=BR,CN&track=109347263,123456891&shipments=109347263,123459999",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"aggregation"
+							],
+							"query": [
+								{
+									"key": "pricing",
+									"value": "BR,CN"
+								},
+								{
+									"key": "track",
+									"value": "109347263,123456891"
+								},
+								{
+									"key": "shipments",
+									"value": "109347263,123459999"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "good_shipments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/aggregation?pricing=BR,CN&track=109347263,123456891&shipments=109347263,123459999",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"aggregation"
+							],
+							"query": [
+								{
+									"key": "pricing",
+									"value": "BR,CN"
+								},
+								{
+									"key": "track",
+									"value": "109347263,123456891"
+								},
+								{
+									"key": "shipments",
+									"value": "109347263,123459999"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "good_empty",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/aggregation?pricing=BR,CN&track=109347263,123456891&shipments=109347263,123459999",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"aggregation"
+							],
+							"query": [
+								{
+									"key": "pricing",
+									"value": "BR,CN"
+								},
+								{
+									"key": "track",
+									"value": "109347263,123456891"
+								},
+								{
+									"key": "shipments",
+									"value": "109347263,123459999"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
